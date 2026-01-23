@@ -1,14 +1,13 @@
 #include "driver/i2c.h"
 #include "esp_log.h"
 
-#define TAG             "LCDSCAN"
-#define I2C_PORT        I2C_NUM_0
-#define SDA_GPIO        21
-#define SCL_GPIO        22
-#define I2C_FREQ_HZ     100000
+#define TAG "LCDSCAN"
+#define I2C_PORT I2C_NUM_0
+#define SDA_GPIO 21
+#define SCL_GPIO 22
+#define I2C_FREQ_HZ 100000
 
-void app_main(void)
-{
+void app_main(void) {
     i2c_config_t conf = {
         .mode = I2C_MODE_MASTER,
         .sda_io_num = SDA_GPIO,

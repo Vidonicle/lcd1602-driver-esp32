@@ -11,6 +11,8 @@
 #define LCD_ADDR 0x27
 
 // Initialize I2C bus as master
+// I²C lines are open-drain: devices can only drive the bus LOW.
+// Pull-ups are needed so the lines actually go HIGH when not driven.
 static void i2c_master_init(void) {
     i2c_config_t cfg = {
         .mode = I2C_MODE_MASTER,
