@@ -1,4 +1,4 @@
-# ESP32 - LCD1602 Driver
+# lcd1602-driver-esp32
 
 An HD44780-based LCD1602 driver for ESP32 using a PCF8574 I2C expander, written in plain C for ESP-IDF.
 
