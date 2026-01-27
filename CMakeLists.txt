@@ -1,8 +1,8 @@
 idf_component_register( 
     SRCS 
-        src/lcd1602.c
+        lcd1602.c
     INCLUDE_DIRS
-        include
+        .
     REQUIRES 
         driver
 )
