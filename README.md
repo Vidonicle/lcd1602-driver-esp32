@@ -10,7 +10,6 @@ This driver:
 
 - Uses ESP-IDF’s I2C API (`driver/i2c.h`)
 - Works with PCF8574 I2C port expander modules
-- Written in C (no C++)
 - Includes a port scanner to help you discover the I2C address of your LCD module
 
 Future plans:
