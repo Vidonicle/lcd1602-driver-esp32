@@ -1,4 +1,3 @@
-
 # ESP32 - LCD1602 Driver
 
 An HD44780-based LCD1602 driver for ESP32 using a PCF8574 I2C expander, written in plain C for ESP-IDF.
@@ -25,11 +24,11 @@ Currently only tested on the ESP32 Wrover. Future plans include allowing use of 
 The `examples/` directory contains:
 
 - `example_use.c` — “Hello World” usage example showing:
-  - I²C master initialization
+  - I2C master initialization
   - LCD initialization
   - writing two lines of text
 
-- `port_scanner.c` — scans the I²C bus and logs any detected I²C devices, including LCD modules.
+- `port_scanner.c` — scans the I2C bus and logs any detected I2C devices, including LCD modules.
   Useful when you don’t know if your module is `0x27`, `0x3F`, etc.
 
 - Make sure you set the correct SDA and SCL pins and I2C PORT for your setup.
@@ -50,6 +49,6 @@ This component is designed for ESP32 using ESP-IDF.
 
 Other ESP32 modules should work as long as:
 - SDA/SCL lines are connected correctly
-- PCF8574 module has I²C pull-ups
+- PCF8574 module has I2C pull-ups
 
 External level shifting is not required for typical 3.3V setups.
